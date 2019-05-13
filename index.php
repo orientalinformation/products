@@ -1,7 +1,8 @@
 <?php 
 include_once  ('includes/db_connection.php');
-include_once ('oop/inheritance.php');
-include_once ('oop/polymorphism.php');
+// include_once ('oop/inheritance.php');
+// include_once ('oop/polymorphism.php');
+// include_once ('oop/encapsulation.php');
 // $connect = openConnect();
 
 //*****inheritance*****
@@ -11,10 +12,10 @@ include_once ('oop/polymorphism.php');
 // $adults->getClass();
 // $adults->getParentClass();
 //**********polymorphism************
-$square = new Square();
-$square->areaCalculation();
-$rectangle = New Rectangle();
-$rectangle->areaCalculation();
+// $square = new Square();
+// $square->areaCalculation();
+// $rectangle = New Rectangle();
+// $rectangle->areaCalculation();
 
 
 // closeConnect($connect);
