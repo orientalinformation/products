@@ -1,7 +1,21 @@
 <?php 
-include_once  ('db_connection.php');
-
+include_once  ('includes/db_connection.php');
+include_once ('oop/inheritance.php');
+include_once ('oop/polymorphism.php');
 // $connect = openConnect();
+
+//*****inheritance*****
+// $adults = new Adults();
+// $adults->eat();
+// $adults->go();
+// $adults->getClass();
+// $adults->getParentClass();
+//**********polymorphism************
+$square = new Square();
+$square->areaCalculation();
+$rectangle = New Rectangle();
+$rectangle->areaCalculation();
+
 
 // closeConnect($connect);
 ?>
