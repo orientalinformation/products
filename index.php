@@ -17,6 +17,8 @@ include_once  ('includes/db_connection.php');
 // $rectangle = New Rectangle();
 // $rectangle->areaCalculation();
 
+//*********Contruction***************
+include_once ('oop/contruction.php')
 
 // closeConnect($connect);
 ?>
