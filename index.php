@@ -22,12 +22,16 @@ include_once  ('includes/db_connection.php');
 // include_once ('oop/contruction.php')
 
 //*************Abstaction***************
-include_once ('oop/abstract.php');
+// include_once ('oop/abstract.php');
 // abstract cann't instantiate
 // $people = new People(); // Fatal error: Uncaught Error: Cannot instantiate abstract class People in
+// $man = new Man();
+// $man->drink();
 
-$man = new Man();
-$man->drink();
+//******************Interface**********
+include_once ('oop/interface.php');
+
+// $animal = new Animal(); //Fatal error: Uncaught Error: Cannot instantiate interface Animal 
 
 
 // closeConnect($connect);
