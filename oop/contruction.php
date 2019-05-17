@@ -3,17 +3,17 @@ class Bar
 {
     public function __construct()
     {
-        echo 'Class Bar được khởi tạo'  . "<br>";
+        echo 'Class Bar construct'  . "<br>";
     }
 
     public function getMessage()
     {
-        echo 'Đây là class Bar' . "<br>";
+        echo 'This is class Bar' . "<br>";
     }
 
     public function __destruct()
     {
-        echo 'Class Bar được hủy'  . "<br>";
+        echo 'Class Bar destruct'  . "<br>";
     }
 }
 
@@ -21,12 +21,12 @@ class Foo extends Bar
 {
     public function __construct()
     {
-        echo 'Class Foo được khởi tạo' . "<br>";
+        echo 'Class Foo construct' . "<br>";
     }
 
     public function __destruct()
     {
-        echo 'Class Foo được hủy' . "<br>";
+        echo 'Class Foo destruct' . "<br>";
     }
 }
 
