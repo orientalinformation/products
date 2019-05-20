@@ -34,19 +34,23 @@ include_once  ('includes/db_connection.php');
 // $animal = new Animal(); //Fatal error: Uncaught Error: Cannot instantiate interface Animal 
 
 //*******************static and final*************
-include_once ('oop/staticfinal.php');
-$animal = new Animal();
-$plant = new Plant();
+// include_once ('oop/staticfinal.php');
+// $animal = new Animal();
+// $plant = new Plant();
 
-$animal->setLeg('Oriental');
-$plant->setLeaf('Leaf');
-echo $animal->getLeg() . "<br>";
-echo $plant->getLeaf() . "<br>";
-echo "---------------------------<br>";
-$animal1 = new Animal();
-$plant1 = new Plant();
-echo $animal1->getLeg() . "<br>"; // get value ma ta gan lan cuoi cung
-echo $plant1->getLeaf() . "<br>"; // lay gia tri default ban dau
+// $animal->setLeg('Oriental');
+// $plant->setLeaf('Leaf');
+// echo $animal->getLeg() . "<br>";
+// echo $plant->getLeaf() . "<br>";
+// echo "---------------------------<br>";
+// $animal1 = new Animal();
+// $plant1 = new Plant();
+// echo $animal1->getLeg() . "<br>"; // get value ma ta gan lan cuoi cung
+// echo $plant1->getLeaf() . "<br>"; // lay gia tri default ban dau
+
+//**********************final *******************
+include_once ('oop/final.php');
+
 
 // closeConnect($connect);
 ?>
