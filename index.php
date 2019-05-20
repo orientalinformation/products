@@ -29,10 +29,24 @@ include_once  ('includes/db_connection.php');
 // $man->drink();
 
 //******************Interface**********
-include_once ('oop/interface.php');
+// include_once ('oop/interface.php');
 
 // $animal = new Animal(); //Fatal error: Uncaught Error: Cannot instantiate interface Animal 
 
+//*******************static and final*************
+include_once ('oop/staticfinal.php');
+$animal = new Animal();
+$plant = new Plant();
+
+$animal->setLeg('Oriental');
+$plant->setLeaf('Leaf');
+echo $animal->getLeg() . "<br>";
+echo $plant->getLeaf() . "<br>";
+echo "---------------------------<br>";
+$animal1 = new Animal();
+$plant1 = new Plant();
+echo $animal1->getLeg() . "<br>"; // get value ma ta gan lan cuoi cung
+echo $plant1->getLeaf() . "<br>"; // lay gia tri default ban dau
 
 // closeConnect($connect);
 ?>
